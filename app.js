@@ -26,12 +26,12 @@ function wishMe() {
     }
 }
 
-window.addEventListener('load', ()=>{
-    speak("hello")
-    wishMe();
-    speak("Keven here. I'm a virtual assistant of Derik");
-    speak("To start talking with me please click on the mic and say, make sure you open chrome");
-})
+// window.addEventListener('load', ()=>{
+//     speak("hello")
+//     wishMe();
+//     speak("Keven here. I'm a virtual assistant of Derik");
+//     speak("To start talking with me please click on the mic and say, make sure you open chrome");
+// })
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
