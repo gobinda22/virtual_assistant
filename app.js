@@ -59,7 +59,12 @@ function speakThis(message) {
         speak("Keven here. I'm a virtual assistant of Derik");
         speech.text = finalText;
     }
-
+    
+    else if(message.includes('i love you')){
+        const finalText ="love you too";
+        speech.text = finalText;
+    }
+    
     else if(message.includes('how are you')) {
         const finalText = "I am fine, What about you";
         speech.text = finalText;
