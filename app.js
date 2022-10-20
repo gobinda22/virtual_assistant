@@ -51,13 +51,17 @@ function speakThis(message) {
 
     speech.text = "I did not understand what you said please try again";
 
-    if(message.includes('hey') || message.includes('hello')) {
-        const finalText = "Hello, how can i help you ?";
+    
+    if(message.includes('hello')) {
+        const finalText = "To start talking with me please click on the mic and say, make sure you open chrome";
+        speak("hi");
+        wishMe();
+        speak("Keven here. I'm a virtual assistant of Derik");
         speech.text = finalText;
     }
 
     else if(message.includes('how are you')) {
-        const finalText = "I am fine Derik What about you";
+        const finalText = "I am fine, What about you";
         speech.text = finalText;
     }
 
@@ -87,7 +91,7 @@ function speakThis(message) {
         const finalText = "yes, You are a brother like no other";
         speech.text = finalText;
     }
-    else if(message.includes('play a song') || message.includes("play song") || message.includes("Keven, play a song")){
+    else if(message.includes('play a song') || message.includes("play song") || message.includes("play music")){
         const finalText = "ok let me play my favorite song";
         window.open('https://www.youtube.com/watch?v=RgKAFK5djSk/');
         speech.text = finalText;
